@@ -1,0 +1,32 @@
+[project]
+name = "harmony-hound"
+
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "MasoNord",email = "trotf233@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asyncpg (>=0.31.0,<0.32.0)",
+    "sqlalchemy (>=2.0.44,<3.0.0)",
+    "alembic (>=1.17.2,<2.0.0)",
+    "aiogram (>=3.22.0,<4.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "google-api-python-client (>=2.187.0,<3.0.0)",
+    "google-auth-httplib2 (>=0.3.0,<0.4.0)",
+    "google-auth-oauthlib (>=1.2.3,<2.0.0)",
+    "python-magic (>=0.4.27,<0.5.0)",
+    "python-magic-bin (>=0.4.14,<0.5.0)",
+    "redis (>=7.1.0,<8.0.0)",
+    "ffmpeg-python (>=0.2.0,<0.3.0)"
+]
+
+[tool.poetry]
+packages = [{include = "harmony_hound", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
