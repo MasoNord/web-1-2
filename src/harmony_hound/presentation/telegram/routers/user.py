@@ -14,6 +14,7 @@ from harmony_hound.presentation.telegram.services.voice_processing_class import 
 
 user_router = Router()
 
+"""This is user specific router, it fetches general info about the app, and the user's data collected by bot"""
 @user_router.message(F.text == "ℹ️ Info")
 async def info (
         message: Message

@@ -3,6 +3,7 @@ from aiogram.types import Message
 
 storage_router = Router()
 
+"""This router is manly focused on working with user's liked songs"""
 @storage_router.message(F.text == "Add song")
 async def add_song_to_liked(message: Message):
     pass

@@ -14,6 +14,7 @@ from harmony_hound.presentation.telegram.services.voice_processing_class import 
 
 recognition_router = Router()
 
+"""This route is responsible for the music recognition process itself"""
 @recognition_router.message(F.voice)
 async def audio_processing(message: Message):
     key = f"active_processing:{message.from_user.id}"

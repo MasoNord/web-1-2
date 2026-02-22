@@ -5,6 +5,7 @@ from aiogram.types import Message
 
 help_router = Router()
 
+"""This route is responsible for handling helping requests"""
 @help_router.message(F.text == "💁‍♂️ Help")
 async def help(
         message: Message

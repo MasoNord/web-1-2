@@ -6,6 +6,7 @@ from src.harmony_hound.presentation.telegram.keyboards.main_keyboards import sta
 
 start_router = Router()
 
+"""This is a starting route"""
 @start_router.message(Command("start"))
 async def start(
         message: Message
