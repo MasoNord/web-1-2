@@ -1,6 +1,7 @@
 import requests
 
 from harmony_hound.main.config import load_rapid_api_config
+from harmony_hound.application.common.dto import SongRecognitionResponse
 
 
 class RecognitionService:
@@ -26,4 +27,7 @@ class RecognitionService:
 
         response = requests.get(url, headers=headers, params=querystring)
 
-        return response.json()
+        return self._normalize_response(response.json())
+    
+    def _normalize_response(response: dict) -> SongRecognitionResponse:
+        pass
