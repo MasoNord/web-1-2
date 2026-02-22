@@ -6,7 +6,7 @@ from harmony_hound.main.config import load_rapid_api_config
 class RecognitionService:
     def recognise_song(self, google_web_view_link: str):
         """
-        The method which recognises songs by Google Drive url
+        The method recognises songs by Google Drive url
         The recognition process is performed by Shazam Song Recognition API
         From RapidAPI website
         :param google_web_view_link: str

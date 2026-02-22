@@ -100,8 +100,6 @@ class AbstractProcessingClass(ABC):
             print(f"File not found: {full_file_path}. Make sure FFprobe is installed and in your PATH.")
             return None
 
-
-
     @abstractmethod
     def get_source_full_path(self, message, file_path) -> Path:
         pass
