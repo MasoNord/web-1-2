@@ -11,7 +11,8 @@ from harmony_hound.presentation.telegram.routers.recognition import recognition_
 from harmony_hound.presentation.telegram.routers.help import help_router
 from harmony_hound.main.config import bot, dp, admins
 from aiogram.types import BotCommand, BotCommandScopeDefault
-
+from src.harmony_hound.presentation.telegram.routers.start import start_router
+from harmony_hound.presentation.telegram.routers.storage import storage_router
 
 logger = getLogger(__name__)
 
@@ -41,6 +42,7 @@ async def stop_bot():
 async def main():
     dp.include_router(start_router)
     dp.include_router(user_router)
+    dp.include_router(storage_router)
     dp.include_router(help_router)
     dp.include_router(recognition_router)
 
